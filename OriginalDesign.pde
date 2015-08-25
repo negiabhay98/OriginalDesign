@@ -17,6 +17,6 @@ void mouseClicked()
 
 void cookie() 
 {
-  fill (91, 67, 1);
+  fill (174, 133, 70);
   ellipse (random(1001), random(1001), 200, 200);
 }
