@@ -25,5 +25,4 @@ void draw()
  minutes = minutes + (PI/1800);
  strokeWeight(5);
  line(250, 250, 250+150*cos(hours), 250+150*sin(hours));
- System.out.println(frameRate);
 }
