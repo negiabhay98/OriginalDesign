@@ -1,33 +1,20 @@
-float lineLeft = 400;
-float lineRight = 400;
-float lineUp = 400;
-float lineDown = 400;
-
+float  = -HALF_PI;
 void setup()
 {
- size(800, 800);
- background(0); 
- frameRate(200);
+ size (500, 500);
+ frameRate(1);
+ 
 }
 
 void draw()
-{ 
-  background(0);
-  stroke(255);
-  line (lineLeft, 0, lineLeft, 800);
-  lineLeft = lineLeft - 1;
-  line (lineRight, 0, lineRight, 800);
-  lineRight = lineRight + 1;
-  line (0, lineUp, 800, lineUp);
-  lineUp = lineUp + 1;
-  line (0, lineDown, 800, lineDown);
-  lineDown = lineDown - 1;
-  if (lineLeft<1)  {
-    redraw();
-  }
-  if (lineRight>800)  {
-    redraw();
-  }
-  
-  
+{
+ background(0);
+ noFill();
+ stroke(255);
+ smooth();
+ ellipse (250, 250, 450, 450);
+ stroke(255);
+ line (250, 250, 250+200*cos(theta), 250+200*sin(theta));
+ theta = theta + (PI/30); 
+ System.out.println(frameRate);
 }
